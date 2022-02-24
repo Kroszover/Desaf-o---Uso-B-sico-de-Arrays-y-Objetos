@@ -209,8 +209,63 @@ let atencionDental = `Primera atención: ${dental[0].paciente} - ${dental[0].pre
 document.getElementById('atenciones-den').innerHTML = atencionDental;
 
 
-
-
-
-
 /*3. Recorrer el arreglo y mostrar su contenido en una tabla. */
+
+//Dividiremos por especialidad
+
+//Radiologia
+//Maqueta de tabla.
+let tabla1 = "<tr><th>Hora</th><th>Especialista</th><th>Pacientes</th><th>Rut</th><th>Previsión</th></tr>";
+
+//Ciclo For para rellenar las filas de la tabla recorriendo el arreglo.
+for(let i=0; i<radiologia.length; i++){
+    tabla1 += 
+    `<tr>
+    <td>${radiologia[i].hora}</td>
+    <td>${radiologia[i].especialista}</td>
+    <td>${radiologia[i].paciente}</td>
+    <td>${radiologia[i].rut}</td>
+    <td>${radiologia[i].prevision}</td>
+    </tr>`
+}
+
+//Insertamos la fila en la tabla.
+document.getElementById('tabla-hr1').innerHTML = tabla1
+
+//Traumatologia
+//Maqueta de tabla.
+let tabla2 = "<tr><th>Hora</th><th>Especialista</th><th>Pacientes</th><th>Rut</th><th>Previsión</th></tr>";
+
+//Ciclo For para rellenar las filas de la tabla recorriendo el arreglo.
+for(let i=0; i<traumatologia.length; i++){
+    tabla2 += 
+    `<tr>
+    <td>${traumatologia[i].hora}</td>
+    <td>${traumatologia[i].especialista}</td>
+    <td>${traumatologia[i].paciente}</td>
+    <td>${traumatologia[i].rut}</td>
+    <td>${traumatologia[i].prevision}</td>
+    </tr>`
+}
+
+//Insertamos la fila en la tabla.
+document.getElementById('tabla-hr2').innerHTML = tabla2
+
+//Dental
+//Maqueta de tabla.
+let tabla3 = "<tr><th>Hora</th><th>Especialista</th><th>Pacientes</th><th>Rut</th><th>Previsión</th></tr>";
+
+//Ciclo For para rellenar las filas de la tabla recorriendo el arreglo.
+for(let i=0; i<dental.length; i++){
+    tabla3 += 
+    `<tr>
+    <td>${dental[i].hora}</td>
+    <td>${dental[i].especialista}</td>
+    <td>${dental[i].paciente}</td>
+    <td>${dental[i].rut}</td>
+    <td>${dental[i].prevision}</td>
+    </tr>`
+}
+
+//Insertamos la fila en la tabla.
+document.getElementById('tabla-hr3').innerHTML = tabla3
