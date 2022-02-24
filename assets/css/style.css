@@ -1,1 +1,13 @@
-*{background-color:;}
+body{
+    margin:0;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+h4{text-align: center;
+justify-content: center;
+color: brown;}
+.navbar{color: aquamarine;
+background-color: aquamarine;}
